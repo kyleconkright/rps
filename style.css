@@ -1,0 +1,95 @@
+* {margin: 0; padding: 0; font-size: inherit; color: inherit; font-family: inherit; font-weight: inherit;}
+
+body {
+	background: #232830;
+	color: #C0C5CE;
+	font-family: Montserrat, helvetica neue, sans-serif;
+	font-size: 2.5em;
+	font-weight: 400;
+}
+
+h1 {
+	text-transform: uppercase;
+}
+
+h2 {
+	color: #65737E;
+	font-weight: 700;
+}
+
+header {
+	background: #2B303B;
+	padding: 20px;
+	margin: 0 0 120px;
+	display: flex;
+}
+
+
+header #appName {
+	flex: 2;
+}
+
+header #appName h3, header #score div h3 {
+	font-size: .5em;
+	color: #65737E;
+}
+
+header #score {
+	flex: 1;
+	display: flex;
+}
+
+header #score div {
+	flex: 1;
+	text-align: center;
+}
+
+#container {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#the-buttons {
+	margin: 40px 0;
+}
+
+button {
+	border: solid 2px rgba(255,255,255,.075);
+	background: transparent;
+	border-radius: 3px;
+	padding: 15px 20px;
+	cursor: pointer;
+	margin: 10px 0 0;
+}
+
+button i {
+	color: #65737E;
+}
+
+button:focus {
+	outline: none;
+}
+
+#compResult {
+	color: #65737E;
+	margin: 0 0 40px;
+}
+
+#compMove, #reset {
+	font-weight: 700;
+	background: #292E36;
+	padding: 10px 15px;
+	border-radius: 3px;
+	color: #C0C5CE;
+}
+
+#result {
+	margin: 10px 0 0;
+}
+
+#reset {
+	display: none;
+	cursor: pointer;
+	background: #5842E3;
+}
