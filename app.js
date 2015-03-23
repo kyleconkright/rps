@@ -96,15 +96,39 @@ rockBtn.addEventListener('click', function() {
 	}
 });
 
+window.addEventListener('keydown', function(event) {
+	if(event.keyCode === 37) {
+		if(playerWins < 5 && computerWins <5) {
+			theGame('rock');
+		}
+	}
+});
+
 paperBtn.addEventListener('click', function() {
 	if(playerWins < 5 && computerWins <5) {
 		theGame('paper');
 	}
 });
 
+window.addEventListener('keydown', function(event) {
+	if(event.keyCode === 38) {
+		if(playerWins < 5 && computerWins <5) {
+			theGame('paper');
+		}
+	}
+});
+
 scissorsBtn.addEventListener('click', function() {
 	if(playerWins < 5 && computerWins <5) {
 		theGame('scissors');
+	}
+});
+
+window.addEventListener('keydown', function(event) {
+	if(event.keyCode === 39) {
+		if(playerWins < 5 && computerWins <5) {
+			theGame('scissors');
+		}
 	}
 });
 
